@@ -1,0 +1,13 @@
+//********operator *****
+
+1. Arthematic operator = +,-,*,/,%
+2. Relational operator = >,< ,<=,>=,!=
+3. Logical operator = &&,||      
+
+(&& jab use krte h to ye sari condition check krta h or sari condition true hone par hi iske andar ka code run hota h 
+and || jab use krte h to ye sari condition check krta h or koi bhi ek condition true hone par iske andar ka code run hota h 
+)
+
+4. Unary operator = ++, --
+
+ 
