@@ -98,25 +98,6 @@
 
 
 
-/*-----------------------second largest element of array--------------*/
-//  let arr = [12, 20, 430, 4440, 50]
-// let max = arr[0]
-// let smax = arr[1]
-// for (let i = 2; i < arr.length; i++) {
-//     if (arr[i] > max) {
-//         smax = max;
-//         max = arr[i];
-//     } else if (arr[i] < max && arr[i] > smax) {
-//         smax = arr[i];
-//     }
-// }
-
-// console.log(smax)   
-
-
-
-
-
 /*-----------------------third largest element of array--------------*/
  let arr = [12, 20, 430, 4440, 50]
 
