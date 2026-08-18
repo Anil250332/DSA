@@ -56,6 +56,5 @@
             count ++;
         }
     }
-
     return count;
 };
