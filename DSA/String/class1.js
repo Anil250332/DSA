@@ -1,4 +1,115 @@
-let name = "siddharth";
-for(let i = 0 ; i<name.length;i++){
-    console.log(name[i]);
-}
+// let name = "siddharth";
+// for(let i = 0 ; i<name.length;i++){
+//     console.log(name[i]);
+// }
+
+
+// functions of array
+// slice()
+// substring()
+// trim()
+// charAt(index)
+// toUpperCase()
+// toLowerCase()
+// indexOf()
+// lastIndexOf()
+// replace()
+// replaceAll()
+// split()
+// join()
+// concat()
+// includes()
+// startsWith()
+// endsWith()
+// trimStart()
+// trimEnd()
+// trimStart()
+// trimEnd()
+// trimStart()
+// trimEnd()
+// trimStart()
+// trimEnd()
+// trimStart()
+// trimEnd()
+// trimStart()
+// trimEnd()
+// trimStart()
+// trimEnd()
+
+
+
+//ouestion 1:----
+
+// let str = "   sid   ";
+// console.log(str.trim());
+
+// quession 2
+
+// let str = "siddharth";
+// for(let i=0;i<str.length;i++){
+//   console.log(str[i]);
+// }
+
+
+
+// quession 3
+
+
+
+// let str = "siddharth";
+// for(let i=str.length-1;i>=0;i--){
+//   console.log(str[i]);
+// }
+
+
+// quession 4
+
+// let str = "naman";
+// let i=0,j=str.length-1;
+// while(i<j){
+//     if(str[i]!=str[j]){
+//         console.log("not a palindrome");
+//         break;
+//     }
+//     i++;
+//     j--;
+// }
+// if(i>=j){
+//     console.log("palindrome");
+// }
+
+
+
+
+
+
+// let prompt = require("prompt-sync")();
+// let s = prompt("enter youe string");
+
+// let ans = "";
+// for(let i=0;i<s.length;i++){
+//     let ch = s.charCodeAt(i)
+//     if(ch >= 65 && ch<=90){
+//         ans+=String.fromCharCode(ch+32)
+//     }  else { ans+=String.fromCharCode(ch-32)}
+  
+//     }
+// console.log(ans)
+
+
+
+
+
+
+let prompt = require("prompt-sync")();
+let s = prompt("enter youe string");
+
+let ans = "";
+for(let i=0;i<s.length;i++){
+    let ch = s.charCodeAt(i)
+    if(ch >= 65 && ch<=90){
+        ans+=String.fromCharCode(ch+32)
+    }  else { ans+=String.fromCharCode(ch-32)}
+  
+    }
+console.log(ans)
