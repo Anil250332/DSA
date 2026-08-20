@@ -99,17 +99,28 @@
 
 
 
+// let prompt = require("prompt-sync")();
+// let s = prompt("enter youe string");
 
-
-let prompt = require("prompt-sync")();
-let s = prompt("enter youe string");
-
-let ans = "";
-for(let i=0;i<s.length;i++){
-    let ch = s.charCodeAt(i)
-    if(ch >= 65 && ch<=90){
-        ans+=String.fromCharCode(ch+32)
-    }  else { ans+=String.fromCharCode(ch-32)}
+// let ans = "";
+// for(let i=0;i<s.length;i++){
+//     let ch = s.charCodeAt(i)
+//     if(ch >= 65 && ch<=90){
+//         ans+=String.fromCharCode(ch+32)
+//     }  else { ans+=String.fromCharCode(ch-32)}
   
+//     }
+// console.log(ans)
+
+
+
+
+
+let arr = ["attention","atack","heck","hello","attention",]
+
+let check = "att"
+for(let i=0;i<arr.length;i++){
+    if(arr[i].startsWith(check)){
+        console.log(i)
     }
-console.log(ans)
+}

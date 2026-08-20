@@ -29,6 +29,10 @@
 
 
 
+//kadane's algorithm
+
+
+
 var maxSubArray = function(nums) {
     let sum =0;
     let max = -Infinity;
