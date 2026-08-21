@@ -62,7 +62,7 @@
 // }
 
 
-// quession 4
+// quession 4   (Palindrone)
 
 // let str = "naman";
 // let i=0,j=str.length-1;
@@ -81,23 +81,7 @@
 
 
 
-
-
-// let prompt = require("prompt-sync")();
-// let s = prompt("enter youe string");
-
-// let ans = "";
-// for(let i=0;i<s.length;i++){
-//     let ch = s.charCodeAt(i)
-//     if(ch >= 65 && ch<=90){
-//         ans+=String.fromCharCode(ch+32)
-//     }  else { ans+=String.fromCharCode(ch-32)}
-  
-//     }
-// console.log(ans)
-
-
-
+// Quession 5:       (lower case and upper case conversion)
 
 // let prompt = require("prompt-sync")();
 // let s = prompt("enter youe string");
@@ -115,12 +99,29 @@
 
 
 
+//question 6:        (start with chack)
 
-let arr = ["attention","atack","heck","hello","attention",]
+// let arr = ["attention","atack","heck","hello","attention",]
 
-let check = "att"
+// let check = "at"
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i].startsWith(check)){
+//         console.log(arr[i])
+//     }
+// }
+
+
+
+
+let str = "sello bha kya hak chakker he"
+let arr= str.split(" ");
+let ans = "";
+
 for(let i=0;i<arr.length;i++){
-    if(arr[i].startsWith(check)){
-        console.log(i)
-    }
+    let word =  arr[i];
+    let first = word.charAt(0).toUpperCase();   
+    let middle = word.substring(1,word.length-1);
+    let last = word.charAt(word.length-1).toUpperCase()
+    ans =ans+(first + middle + last) + " ";
 }
+console.log(ans)
