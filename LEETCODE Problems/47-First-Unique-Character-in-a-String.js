@@ -32,11 +32,20 @@
 // s consists of only lowercase English letters.
 
 
+var firstUniqChar = function(s) {
 
- var firstUniqChar = function(s) {
+    let count = {};
 
     for (let i = 0; i < s.length; i++) {
-        if (s.indexOf(s[i]) === s.lastIndexOf(s[i])) {
+        if (count[s[i]]) {
+            count[s[i]]++;
+        } else {
+            count[s[i]] = 1;
+        }
+    }
+
+    for (let i = 0; i < s.length; i++) {
+        if (count[s[i]] === 1) {
             return i;
         }
     }
