@@ -35,7 +35,6 @@ var detectCapitalUse = function(word) {
     let capital = 0;
     let small = 0;
     for (let i = 0; i < arr.length; i++) {
-
         if (arr[i] >= 65 && arr[i] <= 90) {
             capital++;
         } else {
