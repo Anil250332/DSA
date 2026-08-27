@@ -51,6 +51,5 @@ var detectCapitalUse = function(word) {
     if (capital === 1 && arr[0] >= 65 && arr[0] <= 90) {
         return true;
     }
-
     return false;
 };
