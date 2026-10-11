@@ -44,7 +44,6 @@ var trap = function(height) {
         let trapped = Math.min(leftMax[i], rightMax[i]) - height[i];
         water += trapped;
     }
-
     return water;
 };
 
