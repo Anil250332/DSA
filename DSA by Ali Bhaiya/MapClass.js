@@ -8,6 +8,7 @@ for (let i = 0; i < arr.length; i++) {
         map.set(arr[i], 1)
     }
 }
+console.log(map)
 
 let maxfreq = 0;
 let mode = arr[0];
