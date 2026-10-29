@@ -36,14 +36,14 @@ var areOccurrencesEqual = function (s) {
             map.set(s[i], 1)
         }
     }
-    console.log(map)
-    let value = map.values().next().value;
-    console.log(value)
-    for (let [key, val] of map) {
+   
+    let arr = [...map]
 
-        if (val !== value) {
+    for(let i = 0 ; i<arr.length;i++){
+        if(arr[i][1]!==arr[0][1]){
             return false
         }
     }
-    return true;
+
+    return true
 };
