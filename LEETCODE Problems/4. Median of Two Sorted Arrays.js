@@ -26,25 +26,19 @@
 // -106 <= nums1[i], nums2[i] <= 106
 
 
-
 /**
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number}
  */
-var findMedianSortedArrays = function (nums1, nums2) {
-    
-    const merged = [...nums1, ...nums2];
-    const final = merged.sort((a, b) => a - b);
-    let res = 0;
-    // console.log(final.length)
-    let len = final.length;
-    let val = final[Math.floor(len / 2)]
-    if (len % 2 !== 0) {
-        res = val;
-    } else {
-        res = (val + (val - 1)) / 2;
+var findMedianSortedArrays = function(nums1, nums2) {
+   let arr = [...nums1,...nums2];
+   arr.sort((a,b)=> a-b)  
+   let  mid = Math.floor(arr.length/2)
 
-    }
-    return res;
+   if(arr.length%2==0){
+     return (arr[mid-1]+ arr[mid])/2
+   }else{
+    return arr[mid]
+   }
 };
