@@ -25,7 +25,6 @@
 
 
 var addDigits = function(num) {
-
     function sumDigits(n) {
         if (n === 0) {
             return 0;
@@ -35,7 +34,6 @@ var addDigits = function(num) {
 
         return last + sumDigits(Math.floor(n / 10));
     }
-
     let sum = sumDigits(num);
 
     if (sum < 10) {
