@@ -15,12 +15,26 @@
 // console.log(nPrint(987))
 
 
-let rev =0;
-function nPrint(n) {
-    if(n === 0) return 0;
-    rev = (rev*10) + Math.floor(n%10)
-    return nPrint(Math.floor(n/10))
-}
-nPrint(987)
+// let rev =0;
+// function reverseValue(n) {
+//     if(n === 0) return 0;
+//     rev = (rev*10) + Math.floor(n%10)
+//     return reverseValue(Math.floor(n/10))
+// }
+// reverseValue(64687)
 
-console.log(rev)
+// console.log(rev)
+
+
+
+function fibonacci(n, first = 0, second = 1) {
+    if (n === 0) return first;
+
+    return fibonacci(
+        n - 1,
+        second,
+        first + second
+    );
+}
+
+console.log(fibonacci(10));
